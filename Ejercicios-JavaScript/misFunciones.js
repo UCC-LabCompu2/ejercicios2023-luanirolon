@@ -26,7 +26,22 @@ funtion cambiarUnidades(id,valor){
     document.LasUnidades.unid_pie.value= 3 * valor;
   }else if(id== "pie"){
     document.LasUnidades.unid_metro.value= 0,3048 * valor;
-    document.LasUnidades.unid_pulgada.value= * valor;
-    document.LasUnidades.unid_yarda.value= * valor;
+    document.LasUnidades.unid_pulgada.value= 12 * valor;
+    document.LasUnidades.unid_yarda.value= 0.3333 * valor;
   }
+}
+
+function convertirGR(id){
+  var grad, rad;
+  if(id== "grados"){
+    grad= document.getElementById("grados").value;
+    rad= (grad * Math.PI) /180;
+  }else if(id== "radianes"){
+    rad= document.getElementById("radianes").value;
+    grad= (rad * 180) /Math.PI;  
+  }
+  document.getElementById.("grados").value= grad;
+  document.getElementById.("radianes").value= rad;
+  
+  
 }
