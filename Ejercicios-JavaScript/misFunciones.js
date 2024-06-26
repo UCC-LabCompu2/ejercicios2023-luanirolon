@@ -66,3 +66,14 @@ function cargarWeb() {
     window.open(urlComp);
 }
 
+function cargarResultado() {
+    var urlComp, can, un;
+
+    urlComp = window.location.href.split("/")[5];
+
+    can = urlComp.split("#")[1];
+    un = urlComp.split("#")[2];
+
+    document.getElementById("dist").value = can + " " + un;
+}
+
