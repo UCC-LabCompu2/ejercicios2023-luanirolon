@@ -65,6 +65,15 @@ function cargarWeb() {
     urlComp = "segundaWeb.html#" + cant + "#" + unidad;
     window.open(urlComp);
 }
+function calcularSuma() {
+    var num1, num2;
+
+    num1 = Number(document.getElementsByName("sum_num1")[0].value);
+    num2 = Number(document.getElementsByName("sum_num2")[0].value);
+
+    document.getElementsByName("sum_total")[0].innerHTML = num1 + num2;
+}
+
 
 function cargarResultado() {
     var urlComp, can, un;
