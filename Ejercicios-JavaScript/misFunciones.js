@@ -55,3 +55,14 @@ function mostrar_ocultar(valorMO){
     document.getElementById("divMO").style.display= 'none';
   }
 }
+
+function cargarWeb() {
+    var cant, unidad, urlComp;
+
+    cant = document.getElementById("distancia").value;
+    unidad = document.getElementsByName("unidades")[0].value;
+
+    urlComp = "segundaWeb.html#" + cant + "#" + unidad;
+    window.open(urlComp);
+}
+
